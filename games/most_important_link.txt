@@ -1,0 +1,4 @@
+https://www.chinedufn.com/webgl-skeletal-animation-sound-effect-tutorial/
+
+(currently implemented in load_object)
+https://webglfundamentals.org/webgl/lessons/webgl-load-obj.html

@@ -1,0 +1,5 @@
+https://github.com/pyodide/pyodide/discussions/3120
+
+https://discourse.threejs.org/t/using-pyscript-and-three-js-for-loading-gltf/42631
+
+https://github.com/custom-components/pyscript/discussions/392

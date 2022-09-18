@@ -1,0 +1,123 @@
+
+
+.green-text {
+color: #008000;
+}
+
+
+
+.font-38{
+font-size: 38px;
+}
+
+.font-24{
+  font-size: 24px;
+  }
+
+.font-24n{
+  font-size: 24px;
+  text-align: left;
+  padding: 10px;
+  }
+
+.font-29{
+  font-size: 29px;
+  font-weight: bold;
+  text-align: left;
+  font-style: italic;
+  padding: 10px;
+
+  }
+
+
+.font-19{
+  /*font-family: "Lucida Console", "Courier New", monospace;*/
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 150%;
+  }
+
+.font-19n{
+  /*font-family: "Lucida Console", "Courier New", monospace;*/
+  font-family: "Times New Roman", Times, serif;
+  font-size: 19px;
+  text-align: left;
+  padding: 10px;
+  }
+
+
+
+.font-18{
+  /*font-family: "Lucida Console", "Courier New", monospace;*/
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+
+  }
+
+  .space
+  {
+    padding: 10px;
+  }
+
+.font-16{
+  font-size: 16px;
+  text-align: right;
+  padding: 2%;
+  }
+
+.list-inline{
+  display: inline;
+  }
+
+.myDiv {
+    position: relative;
+    padding: 1%;
+    border: 5px outset green;
+    background-color: lightblue;
+    text-align: center;
+    left: 2%;
+    top:10%;
+    width:93%;
+    height:auto;
+    
+  }
+
+.mysubdiv1 {
+  border: 0px solid green;
+  
+  width:10%;
+  float:left;
+  
+}
+
+.mysubdiv2 {
+  border: 0px solid green;
+  
+  width:74%;
+  float :left;
+  
+}
+
+.myheaders {
+  position: relative;
+  border: 5px outset green;
+  background-color: lightblue;
+  text-align: center;
+  left: 2%;
+  top:10%;
+  width:95%;
+  height:auto;
+}
+
+
+.absdiv {
+  display: block;
+  overflow: auto;
+  
+}
+

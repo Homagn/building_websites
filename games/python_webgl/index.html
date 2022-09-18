@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/main.css">
+    <title>Python webgl example using pyscript - The creative world of Homagni</title>
+  </head>
+
+  <body>
+    <h1 class="title">Python webgl example</h1>
+    <a class="font-24" href="/">Home</a>
+    <a class="font-24" href="/games">Games</a>
+    <div class="container-fluid fixed-top header disable-selection">
+	    <div class="row">
+	      <div class="col"></div>
+	      <div class="col-md-6">
+	        <div class="row">
+	          <div class="col">
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col"></div>
+	    </div>
+  	</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js'></script>
+  <!--script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/three.min.js"></script-->
+  <script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/controls/OrbitControls.js"></script>
+  <script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/loaders/LoaderSupport.js"></script>
+  <script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/loaders/OBJLoader2.js"></script>
+  <script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/loaders/MTLLoader.js"></script>
+
+  <script src="https://threejs.org/examples/js/loaders/FBXLoader.js"></script>
+  <script src='https://cdn.jsdelivr.net/gh/mrdoob/Three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
+  <script src="scripts/threejs_animation.js"></script>
+
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+
+  <script type="text/javascript">
+	  
+	  async function loadobj(objLoader)
+	  {
+	  var loaded_object = new THREE.Object3D();
+
+
+		  //const objLoader = new OBJLoader()
+		  objLoader.load(
+		   	'assets/chair.obj',
+		    (object) => {
+		        // (object.children[0] as THREE.Mesh).material = material
+		        // object.traverse(function (child) {
+		        //     if ((child as THREE.Mesh).isMesh) {
+		        //         (child as THREE.Mesh).material = material
+		        //     }
+		        // })
+		        loaded_object.add(object)
+		    },
+		    (xhr) => {
+		        console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
+		    },
+		    (error) => {
+		        console.log(error)
+		    }
+	  		)
+
+	  return loaded_object
+	   }
+  </script>
+
+  <script type="text/javascript">
+	  
+	  async function square(number) {
+		        return number * number;
+		}
+  </script>
+
+  <py-script src="scripts/geometry_animation.py"></py-script>
+  <!--py-script src="scripts/basic_world.py"></py-script-->
+
+    <hr>
+
+    <p>This is my very first pyscript webgl animation. </p>
+
+  </body>
+</html>
+
