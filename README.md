@@ -3,6 +3,7 @@ This repo mostly covers a bunch of sample website building examples using HTML, 
 Getting Started with everything
 ===============================
 See first html tutorial pdf attached in this folder
+link for publishing websites tutorial - https://code.makery.ch/library/html-css/part2/
 
 Game Development
 ================
